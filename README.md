@@ -4,7 +4,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=nyahav&label=Profile%20views&color=0e75b6&style=flat" alt="nyahav" /> </p>
 
-- 🔭 I’m currently working as system administrator at CheckPoint
+- 🔭 I’m currently working as Data Analyst @HR signal
 
 - 🌱 I’m currently learning **Next.js & TypeScript**
 
