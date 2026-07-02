@@ -38,3 +38,54 @@
 <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> 
    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> 
 </a>
+
+## 🛠️ Engineering Deep Dive: Designing a Highly Available Resource-Manager Service
+
+Instead of just listing my skills, I prefer to share how I apply them to solve production challenges. 
+Below is a breakdown of a core architectural problem I owned and resolved.
+
+### 🛑 The Challenge
+A distributed orchestration system processing heavy analytical tools suffered from severe scalability bottlenecks and stability issues under peak traffic:
+* **Throughput Constraints:** The system experienced massive task processing delays due to unoptimized scheduling logic.
+* **Scheduling Latency:** Fetching and evaluating task states constantly against the database introduced a **200ms latency** per scheduling cycle.
+* **System Crashes:** Sudden spikes in high-memory tools led to unpredictable Out-of-Memory (OOM) crashes across worker nodes, bringing down the cluster.
+
+---
+
+### 🏗️ Architectural Evaluation & Decision Matrix
+
+To solve this, I evaluated three potential approaches for task scheduling and system protection:
+
+| Feature | Option A: Distributed Locking (DB-centric) | Option B: Standard Message Queueing (FIFO) | Option C: Custom Weighted Scheduler + 2-Tier Admission Controller (Chosen) |
+| :--- | :--- | :--- | :--- |
+| **Throughput** | Low (DB Bottleneck) | Medium (No resource awareness) | **High (Tailored resource allocation)** |
+| **Latency** | High (>200ms) | Low (<10ms) | **Ultra-Low (~5ms using In-Memory Cache)** |
+| **OOM Protection** | None (Reactive) | Weak (Static rate limiting) | **Proactive (Priority-based preemption)** |
+
+* **Why Option C?** Traditional FIFO queues couldn't differentiate between a light script and a heavy analytical task, leading to resource starvation. A custom weighted scheduler coupled with reactive admission controls allowed us to maximize CPU/Memory utilization safely without crashing nodes.
+
+---
+
+### 💻 The Implementation
+
+I engineered a custom orchestration component utilizing **Java/Kotlin**, **RabbitMQ**, and an **in-memory caching layer**:
+
+1. **Custom Weighted Scheduler:** Implemented an algorithm that scores incoming tasks based on priority, historical execution data, and real-time node capacity. To bypass the DB latency, I moved active scheduler states into a highly optimized, thread-safe in-memory cache.
+2. **Two-Tier Admission Controller:** Built a defensive layer that intercepts tasks before execution. Tier 1 checks global cluster health. Tier 2 handles **priority-based preemption**—if a critical task arrives and memory is tight, low-priority tasks are gracefully paused/re-queued.
+3. **Automated Recovery:** Developed an asynchronous Watchdog system that monitors worker heartbeats and automatically triggers crash-recovery and state-reconciliation routines if a node fails.
+
+---
+
+### 📊 The Impact (Production Results)
+
+* **3x Increase in Tool Throughput:** Optimized resource utilization allowed the cluster to run three times more tasks concurrently.
+* **Latency Slashed by 97.5%:** Scheduling cycle latency dropped from **200ms to just 5ms**.
+* **90% Reduction in OOM Crashes:** Proactive admission control completely stabilized the cluster under peak loads.
+
+---
+
+## 🔒 Core Expertise 
+* **Backend Architecture:** Microservices, Event-Driven Systems, System Integration.
+* **Security First:** Identity Management, Centralized Auth (Keycloak, OAuth2, PKCE).
+* **Data Engineering:** Hybrid SQL/NoSQL migrations, Query Optimization, High-Volume Data Pipelines.
+* **Infrastructure:** Containerization (Docker), Enterprise Messaging (RabbitMQ), High-Availability Systems.
