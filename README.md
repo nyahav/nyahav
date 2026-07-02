@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Yahav Nir</h1>
-<h3 align="center">Backend & Systems Engineer specializing in secure, scalable architecture, distributed microservices, and performance optimization.</h3>
+<h3 align="center">Backend Engineer specializing in secure, scalable architecture, distributed microservices, and performance optimization.</h3>
 <img align="right" alt="Coding" width="400" src="https://media1.tenor.com/m/2fXbn6Xtt0UAAAAC/software-software-development.gif">
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=nyahav&label=Profile%20views&color=0e75b6&style=flat" alt="nyahav" /> </p>
@@ -7,7 +7,7 @@
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://www.linkedin.com/in/nir-yahav" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="nyahav" height="30" width="40" /></a>
-<a href="mailto:yahavnirr@gmail.com" target="blank"><img align="center" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/envelope-closed.svg" alt="Email" height="22" width="35" style="margin-left: 10px;" /></a>
+<a href="mailto:yahavnirr@gmail.com" target="blank"><img align="center" src="https://api.iconify.design/material-symbols:mail-outline-rounded.svg?color=%23ffffff" alt="Email" height="32" width="40" style="margin-left: 10px;" /></a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
