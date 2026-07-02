@@ -7,10 +7,7 @@
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://www.linkedin.com/in/nir-yahav" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="nyahav" height="30" width="40" /></a>
-<p align="left">
-<a href="https://www.linkedin.com/in/nir-yahav" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="nyahav" height="30" width="40" /></a>
 <a href="mailto:yahavnirr@gmail.com" target="blank"><img align="center" src="https://img.shields.io/badge/Email%20%2F%20Copy-yahavnirr%40gmail.com-D14836?style=flat&logo=gmail&logoColor=white" alt="Email" height="30" style="margin-left: 10px;" /></a>
-</p>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
