@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Yahav Nir</h1>
-<h3 align="center">Backend Engineer specializing in secure, scalable architecture, distributed microservices, and performance optimization.</h3>
+<h3 align="center">Software Engineer specializing in secure, scalable architecture, distributed microservices, and performance optimization.</h3>
 <img align="right" alt="Coding" width="400" src="https://media1.tenor.com/m/2fXbn6Xtt0UAAAAC/software-software-development.gif">
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=nyahav&label=Profile%20views&color=0e75b6&style=flat" alt="nyahav" /> </p>
@@ -11,6 +11,9 @@
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
+<a href="https://kotlinlang.org" target="_blank" rel="noreferrer">
+   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kotlin/kotlin-original.svg" alt="kotlin" width="40" height="40"/>
+</a>
 <a href="https://www.java.com/" target="_blank" rel="noreferrer"> 
    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> 
 </a>
@@ -34,6 +37,12 @@
 </a>
 <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> 
    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> 
+</a>
+<a href="https://kubernetes.io/" target="_blank" rel="noreferrer">
+   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-original.svg" alt="kubernetes" width="40" height="40"/>
+</a>
+<a href="https://www.terraform.io/" target="_blank" rel="noreferrer">
+   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/terraform/terraform-original.svg" alt="terraform" width="40" height="40"/>
 </a>
 <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> 
    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> 
